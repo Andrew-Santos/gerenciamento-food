@@ -42,16 +42,3 @@ loginForm.addEventListener('submit', async (event) => {
     }
 });
 
-// Função para verificar se o usuário está logado (para proteger a página /home/index.html)
-async function checkAuth() {
-    const { data: { user } } = await supabase.auth.getUser();
-    if (!user) {
-        // Se não houver usuário logado, redireciona para a página de login
-        window.location.href = '/login.html'; // Assumindo que sua página de login se chama login.html
-    }
-}
-
-// Verifica a autenticação ao carregar a página /home/index.html
-if (window.location.pathname === '/home/index.html') {
-    checkAuth();
-}
