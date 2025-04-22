@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/styles/login.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>Faça seu login</h1>
+        <form id="loginForm">
+            <div class="input-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="Digite seu e-mail" required>
+                <div class="error-message" id="emailError"></div>
+            </div>
+            <div class="input-group">
+                <label for="password">Senha</label>
+                <input type="password" id="password" placeholder="Digite sua senha" required>
+                <div class="error-message" id="passwordError"></div>
+            </div>
+            <div class="remember-forgot">
+                <div class="forgot-password">
+                    <a href="#" id="forgotPassword">Esqueceu a senha?</a>
+                </div>
+            </div>
+            <button type="submit" class="login-button">Entrar</button>
+        </form>
+    </div>
+    <script async src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="scripts/login-primario.js"></script>
+
+
+</body>
+</html>
