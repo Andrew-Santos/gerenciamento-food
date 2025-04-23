@@ -3,32 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <title>Painel de Gerenciamento</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #eef;
-      padding: 30px;
-    }
-    h1 {
-      color: #333;
-    }
-    .logout-btn {
-      margin-top: 20px;
-      padding: 10px 20px;
-      background: #dc3545;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-  </style>
+  <link rel="stylesheet" href="/styles/painel.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
-  <h1>Bem-vindo ao Painel de Gerenciamento 🚀</h1>
-  <p>Aqui você poderá gerenciar combos, clientes e mais.</p>
-  <button class="logout-btn" id="logout">Sair</button>
+  <header id="header"></header>
 
-  <script type="module">
+  <main>
+    <div id="pd-recebido" class="painel-pedido">
+      <div>Pedido recebido:</div>
+      
+    </div>
+    <div id="pd-retirada" class="painel-pedido"></div>
+    <div id="pd-cozinha" class="painel-pedido"></div>
+  </main>
+
+<script src="/scripts/header.js"></script>
+<script src="/SCRIPTS/logo.js"></script>
+
+
+  <!-- <script type="module">
     import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm';
 
     const supabase = createClient(
@@ -46,6 +42,6 @@
       await supabase.auth.signOut();
       window.location.href = "login.html";
     });
-  </script>
+  </script> -->
 </body>
 </html>

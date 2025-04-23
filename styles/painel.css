@@ -1,0 +1,42 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+header{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 100px;
+  justify-content: space-between;
+}
+div.logo svg{
+  width: 150px;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+#container-menu{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+}
+.menu{
+    cursor: pointer;
+    font-weight: bold;
+  }
+.menu:hover, div.logo svg:hover {
+    color: #cd533b;
+    transition: 0.3s;
+}
+
+.menu:active, div.logo svg:active {
+    color: #a84733;
+    transform: scale(0.9);
+}
